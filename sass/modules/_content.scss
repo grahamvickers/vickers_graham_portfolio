@@ -1,0 +1,77 @@
+#skills img{
+    height: 200px;
+    width: 80%;
+    margin: 10px;
+}
+
+#skills h2{
+    text-align: center;
+}
+
+.content{
+    margin: 20px;
+    text-align: center;
+}
+
+#portfolio{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project{
+    background-color: #3f3f3f;
+    padding: 40px;
+    height: 30%;
+}
+
+.project:nth-child(2){
+    background-color: #F27165;
+    height: inherit;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.project img{
+    
+    width: 80%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #portfolio{ 
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+    }
+
+    .project{
+        width: 33%;
+        height: inherit;
+    }
+
+    .project:nth-child(2){
+        background-color: #F27165;
+        width: 33%;
+        height: inherit;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #modernLink{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content{
+        width: 25%;
+    }
+}

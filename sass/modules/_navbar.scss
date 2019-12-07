@@ -1,6 +1,7 @@
 
 nav {
     background-color: #3f3f3f;
+    align-items: center;
 
     a { text-decoration: none; }
 
@@ -38,7 +39,7 @@ nav {
   }
   
   .nav-links li a {
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
     font-size: 16px;
   }
@@ -58,12 +59,14 @@ nav {
 
     .line {
       width: 30px;
-      height: 3px;
-      background: white;
+      height: 4px;
+      background: #f2f2f2;
       margin: 5px;
+      border-radius: 50px;
     }
     nav {
       position: relative;
+      align-items: center;
     }
   
     .hamburger {
@@ -90,9 +93,6 @@ nav {
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
       pointer-events: all;
-    }
-    .landing {
-      flex-direction: column;
     }
     .nav-links li {
       opacity: 0;
