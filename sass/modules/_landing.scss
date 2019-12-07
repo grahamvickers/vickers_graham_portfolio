@@ -1,9 +1,29 @@
 #landing{
     background-color: #F27165;
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
     h2 {
         color: white;
     }
+
+    img{
+        justify-content: flex-end;
+    }
 }
 
+@media screen and (min-width: 768px) {
+#landing{
+    padding: 40px;
+    h2{text-align: left; font-size: 52px;}
+    p{font-size: 24px;}
+}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
 
