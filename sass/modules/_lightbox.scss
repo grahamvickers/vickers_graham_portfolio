@@ -1,0 +1,44 @@
+.lightbox { 
+    display: none;
+    //display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    padding: 100px;
+
+    background-color: rgba(44, 72, 89, 0.85);
+
+    .sidebar {
+        flex: 1;
+    }
+    
+    .lb-content {
+        flex: 3;
+    }
+
+    img { max-width: 250px; }
+
+    .close {    
+        right: 24px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 2em;
+        position: fixed;
+        border: thin solid white;
+        padding: 2px 14px 5px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.25);
+    }
+}
+
+.show-lb { display: flex !important; }
+
+.u-social {
+    li { 
+        display: inline-block;
+        padding: 10px;
+    }
+}
