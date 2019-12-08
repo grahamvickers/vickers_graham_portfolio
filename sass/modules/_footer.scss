@@ -18,7 +18,8 @@ footer { color: $footer-text-color;
     margin: 0 10px 0 10px;
 }
 
-#social img:hover{
+.socialIcon:hover{
+    opacity: 0.5;
     transition: 0.2s ease;
 }
 
