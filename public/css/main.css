@@ -95,6 +95,18 @@ nav {
 
   li.fade {
     opacity: 1; } }
+#about {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 980px) {
+  #about {
+    margin-right: 150px;
+    margin-left: 150px;
+    text-align: center; }
+    #about p {
+      font-size: 18px; } }
 #landing {
   background-color: #F27165;
   display: flex;
@@ -127,7 +139,7 @@ nav {
   text-align: center; }
 
 #portfolio {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   text-align: center; }
 
 .project {
