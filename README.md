@@ -52,9 +52,9 @@ Now in the browser of your choice go to: localhost:3000
 
 ## Built With
 
-* [HTML5]- Layout
-* [CSS3] - Styling
-* [JaveScript] - Functions
+* HTML5 - Layout
+* CSS3 - Styling
+* JaveScript - Functions
 * [Node.js](https://nodejs.org/en/) - Framework
 * [Sass](https://sass-lang.com/) - CSS compiler
 * [Gulp](https://gulpjs.com/) - JS enhancement
@@ -63,10 +63,10 @@ Now in the browser of your choice go to: localhost:3000
 
 ## Authors
 
-* **Graham Vickeras** - *Design & Build* - [Fanshawe College](https://github.com/grahamvickers)
+* **Graham Vickers** - *Design & Build* - [Fanshawe College](https://github.com/grahamvickers)
 
 ## Acknowledgments
 
-* Big thanks to Trevor for teaching me the necessary programs and functions
+* Big thanks to Trevor for teaching me the necessary programs and functions to complete this project.
 
 * Also shoutout to Pan for teaching me PHP and helping me understand API's and how to manipulate the data.
