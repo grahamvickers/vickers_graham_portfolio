@@ -2,6 +2,8 @@
 @import 'modules/_navbar';
 @import 'modules/_landing';
 @import 'modules/_content';
+@import 'modules/_contact';
+@import 'modules/_error';
 @import 'modules/_lightbox';
 
 body {
@@ -18,7 +20,7 @@ main{
 
 h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: $heading-color; font-weight: bold; }
 h1 {font-size: 54px;}
-h2{font-size: 36px;}
+h2{font-size: 36px; margin-bottom: 20px;}
 p {  font-family: 'Poppins', sans-serif;}
 a {color: #f2f2f2; font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: bold; text-decoration: none; margin: 10px;}
 
