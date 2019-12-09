@@ -11,11 +11,14 @@
 .content{
     margin: 20px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-#portfolio{
+#portfolioArea{
     margin-bottom: 60px;
     text-align: center;
+
+    h2{text-align: center;}
 }
 
 .project{
@@ -27,8 +30,8 @@
 .project:nth-child(2){
     background-color: #F27165;
     height: inherit;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    // padding-top: 30%;
+    // padding-bottom: 30%;
 }
 
 .project img{
