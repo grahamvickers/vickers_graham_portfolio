@@ -61,12 +61,23 @@ Now in the browser of your choice go to: localhost:3000
 * [MySQL](https://www.mysql.com/) - Database
 * [Express](https://expressjs.com/) - Handlebars 
 
+## Browser Capability 
+
+* Chrome - 100%
+* Firefox - 100%
+* Safari - 80%
+
+### Issues
+
+* Safari - SVG and contact form functionality 
+* Contact form - Contactact form in hbs is not set up to recieve mail, may add nodemailer to complete it.
+
 ## Authors
 
 * **Graham Vickers** - *Design & Build* - [Fanshawe College](https://github.com/grahamvickers)
 
 ## Acknowledgments
 
-* Big thanks to @Trevor-FanshaweC for teaching me the necessary programs and functions to complete this project.
+* Big thanks to [Trevor](https://github.com/Trevor-FanshaweC) for teaching me the necessary programs and functions to complete this project.
 
-* Also shoutout to @spiderPan for teaching me PHP and helping me understand API's and how to manipulate the data.
+* Also shoutout to [Pan](https://github.com/spiderPan) for teaching me PHP and helping me understand API's and how to manipulate the data.
