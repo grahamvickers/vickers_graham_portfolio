@@ -118,14 +118,31 @@ nav {
   #landing img {
     justify-content: flex-end; }
 
+img {
+  height: 200px; }
+
 @media screen and (min-width: 768px) {
   #landing {
-    padding: 40px; }
+    padding: 60px; }
     #landing h2 {
       text-align: left;
-      font-size: 52px; }
+      font-size: 52px;
+      font-weight: bold; }
     #landing p {
-      font-size: 24px; } }
+      font-size: 24px; }
+    #landing img {
+      height: 400px;
+      margin-left: 20px; } }
+@media screen and (min-width: 960px) {
+  #landing {
+    padding: 80px; }
+    #landing h2 {
+      font-size: 90px; }
+    #landing p {
+      font-size: 36px;
+      margin-top: 30px; }
+    #landing img {
+      height: 700px; } }
 #skills img {
   height: 200px;
   width: 80%;
@@ -175,7 +192,7 @@ nav {
     padding-bottom: 0; }
 
   #modernLink {
-    margin-top: 35%; } }
+    margin-top: 10%; } }
 @media screen and (min-width: 1200px) {
   #skills {
     display: flex;
@@ -183,6 +200,7 @@ nav {
     justify-content: space-around; }
 
   .content {
+    height: 600px;
     width: 25%; } }
 * {
   box-sizing: border-box; }
@@ -343,6 +361,10 @@ h1 {
 h2 {
   font-size: 36px;
   margin-bottom: 20px; }
+
+h3 {
+  color: #f2f2f2;
+  font-size: 32px; }
 
 p {
   font-family: 'Poppins', sans-serif; }
