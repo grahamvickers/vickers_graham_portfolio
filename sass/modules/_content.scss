@@ -1,3 +1,7 @@
+#skills{
+    margin-bottom: 60px;
+}
+
 #skills img{
     height: 200px;
     width: 80%;
@@ -11,10 +15,10 @@
 .content{
     margin: 20px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
-#portfolioArea{
+#portfolio{
     margin-bottom: 60px;
     text-align: center;
 
@@ -75,7 +79,7 @@
     }
 
     .content{
-        height: 600px;
+        // height: 600px;
         width: 25%;
     }
 }

@@ -143,6 +143,9 @@ img {
       margin-top: 30px; }
     #landing img {
       height: 700px; } }
+#skills {
+  margin-bottom: 60px; }
+
 #skills img {
   height: 200px;
   width: 80%;
@@ -154,12 +157,12 @@ img {
 .content {
   margin: 20px;
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 0px; }
 
-#portfolioArea {
+#portfolio {
   margin-bottom: 60px;
   text-align: center; }
-  #portfolioArea h2 {
+  #portfolio h2 {
     text-align: center; }
 
 .project {
@@ -201,7 +204,6 @@ img {
     justify-content: space-around; }
 
   .content {
-    height: 600px;
     width: 25%; } }
 * {
   box-sizing: border-box; }
@@ -211,6 +213,9 @@ form {
 
 #contactArea {
   text-align: center; }
+
+#contactHead {
+  margin-bottom: 20px; }
 
 html,
 body {
@@ -222,6 +227,7 @@ body {
 
 .wrapper {
   margin: 100px auto 0;
+  margin-top: 0px;
   width: 70%;
   max-width: 1000px;
   display: flex;
