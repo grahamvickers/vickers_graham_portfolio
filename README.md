@@ -3,7 +3,7 @@
 This is my portfolio website, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
 
 This site is host on Heroku (subject to change)
-* [VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
+[VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
 
 
 ## Getting Started
@@ -67,6 +67,6 @@ Now in the browser of your choice go to: localhost:3000
 
 ## Acknowledgments
 
-* Big thanks to Trevor for teaching me the necessary programs and functions to complete this project.
+* Big thanks to @Trevor-FanshaweC for teaching me the necessary programs and functions to complete this project.
 
-* Also shoutout to Pan for teaching me PHP and helping me understand API's and how to manipulate the data.
+* Also shoutout to @spiderPan for teaching me PHP and helping me understand API's and how to manipulate the data.
