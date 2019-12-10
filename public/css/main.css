@@ -111,15 +111,14 @@ nav {
   background-color: #F27165;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 40px; }
   #landing h2 {
     color: white; }
   #landing img {
-    justify-content: flex-end; }
-
-img {
-  height: 200px; }
+    justify-content: flex-end;
+    height: 200px;
+    margin-left: 20px; }
 
 @media screen and (min-width: 768px) {
   #landing {
@@ -131,8 +130,7 @@ img {
     #landing p {
       font-size: 24px; }
     #landing img {
-      height: 400px;
-      margin-left: 20px; } }
+      height: 400px; } }
 @media screen and (min-width: 960px) {
   #landing {
     padding: 80px; }
@@ -159,10 +157,10 @@ img {
   text-align: center;
   margin-bottom: 0px; }
 
-#portfolio {
+#portfolioArea {
   margin-bottom: 60px;
   text-align: center; }
-  #portfolio h2 {
+  #portfolioArea h2 {
     text-align: center; }
 
 .project {
@@ -175,6 +173,7 @@ img {
   height: inherit; }
 
 .project img {
+  height: 200px;
   width: 80%; }
 
 @media screen and (min-width: 768px) {
@@ -190,13 +189,12 @@ img {
 
   .project:nth-child(2) {
     background-color: #F27165;
-    width: 33%;
     height: inherit;
     padding-top: 0;
     padding-bottom: 0; }
 
   #modernLink {
-    margin-top: 10%; } }
+    margin-top: 20%; } }
 @media screen and (min-width: 1200px) {
   #skills {
     display: flex;
@@ -204,7 +202,10 @@ img {
     justify-content: space-around; }
 
   .content {
-    width: 25%; } }
+    width: 25%; }
+
+  #modernLink {
+    margin-top: 10%; } }
 * {
   box-sizing: border-box; }
 
