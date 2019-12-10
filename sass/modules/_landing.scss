@@ -2,7 +2,7 @@
     background-color: #F27165;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 40px;
 
     h2 {
@@ -11,15 +11,16 @@
 
     img{
         justify-content: flex-end;
+        height: 200px;
+        margin-left: 20px;
     }
 }
-    img{height: 200px;}
 @media screen and (min-width: 768px) {
 #landing{
     padding: 60px;
     h2{text-align: left; font-size: 52px; font-weight: bold;}
     p{font-size: 24px;}
-    img{height: 400px; margin-left: 20px; }
+    img{height: 400px; }
 }
 
 

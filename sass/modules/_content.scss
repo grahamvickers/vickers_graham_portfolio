@@ -18,7 +18,7 @@
     margin-bottom: 0px;
 }
 
-#portfolio{
+#portfolioArea{
     margin-bottom: 60px;
     text-align: center;
 
@@ -39,7 +39,7 @@
 }
 
 .project img{
-    
+    height: 200px;
     width: 80%;
 }
 
@@ -60,14 +60,13 @@
 
     .project:nth-child(2){
         background-color: #F27165;
-        width: 33%;
         height: inherit;
         padding-top: 0;
         padding-bottom: 0;
     }
 
     #modernLink{
-        margin-top: 10%;
+        margin-top: 20%;
     }
 }
 
@@ -81,5 +80,9 @@
     .content{
         // height: 600px;
         width: 25%;
+    }
+
+    #modernLink{
+        margin-top: 10%;
     }
 }
