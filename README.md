@@ -37,7 +37,6 @@ $ npm install
 Node.js Packages (required):
 ```
 $ npm i -s express
-$ npm i -s express-handlebars
 $ npm i -s mysql
 ```
 ## Deployment
@@ -71,6 +70,7 @@ Now in the browser of your choice go to: localhost:3000
 
 * Safari - SVG and contact form functionality 
 * Contact form - Contactact form in hbs is not set up to recieve mail, may add nodemailer to complete it.
+* Data: Data is not currently being loaded from the db, there is a json error that i cant figure out.
 
 ## Authors
 
