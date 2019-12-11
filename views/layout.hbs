@@ -45,16 +45,16 @@
     <section id="portfolioArea">
       <h2>Recent Projects</h2>
 
-      {{!-- <div id="portfolio">
-        {{#each porfolio-data}}
+      <div id="portfolio">
+        {{#each porfoliodata}}
           <div class="project">
             <img src="images/{{logo}}" alt="company log">
-            <span class="see-more" data-target="{{ID}}">READ MORE</span>
+            <span class="see-more" data-target="{{id}}">READ MORE</span>
           </div>
         {{/each}}
-      </div> --}}
+      </div>
 
-      <div id="portfolio">
+      {{!-- <div id="portfolio">
         <div class="project">
           <img src="images/traa_logo.svg" alt="TRAA Logo">
           <span class="see-more" data-target="1">READ MORE</span>
@@ -69,7 +69,7 @@
           <img src="images/logo_thermosecurity.svg" alt="ThermoSecurity Logo">
           <span class="see-more" data-target="{{ID}}">READ MORE</span>
         </div>
-      </div>
+      </div> --}}
  
     </section>
     
@@ -149,7 +149,7 @@
         <article id="popover">
           <div class="close">x</div>
           <h2 class="porfolio-title"></h2>
-          <img src="images/{{portfolio-bio}}" alt="" class="portfolio-img">
+          <img src="images/{{portfolio-img}}" alt="" class="portfolio-img">
           <p class="portfolio-bio"></p>
         </article>
 
