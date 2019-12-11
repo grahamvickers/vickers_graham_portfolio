@@ -89,7 +89,7 @@ function fetchData() {
     .catch((err) => console.log(err));
 }
 
-const svgGraphic = document.querySelector('.svg-wrapper')
+// const svgGraphic = document.querySelector('.svg-wrapper')
 
 // svgGraphic.addEventListener("click", () => {
 //     console.log(this);

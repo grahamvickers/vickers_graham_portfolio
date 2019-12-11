@@ -45,28 +45,32 @@
     <section id="portfolioArea">
       <h2>Recent Projects</h2>
 
-      <div id="portfolio">
+      {{!-- <div id="portfolio">
         {{#each porfolio-data}}
           <div class="project">
             <img src="images/{{logo}}" alt="company log">
             <span class="see-more" data-target="{{ID}}">READ MORE</span>
           </div>
         {{/each}}
-      </div>
+      </div> --}}
 
-      {{!-- <div id="portfolio">
+      <div id="portfolio">
         <div class="project">
           <img src="images/traa_logo.svg" alt="TRAA Logo">
+          <span class="see-more" data-target="1">READ MORE</span>
         </div>
 
         <div class="project">
           <img src="images/modern_link_logo.svg" alt="Modern Link Media Logo" id="modernLink">
+          <span class="see-more" data-target="{{ID}}">READ MORE</span>
         </div>
 
         <div class="project">
           <img src="images/logo_thermosecurity.svg" alt="ThermoSecurity Logo">
+          <span class="see-more" data-target="{{ID}}">READ MORE</span>
         </div>
-      </div> --}}
+      </div>
+ 
     </section>
     
   <main>
