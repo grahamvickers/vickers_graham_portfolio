@@ -9,7 +9,7 @@ hamburger.addEventListener("click", () => {
   links.forEach(link => {
     link.classList.toggle("fade");
   });
-});
+})
 
 const waypoint = new Waypoint({
   // what element the wayo=point is looking for 
@@ -60,7 +60,7 @@ const waypoint5 = new Waypoint({
 })
 
 function buildPopover(portfoliodata, el) {
-  popOver.querySelector(".portfolio-title").textContent = portfoliodata.title;
+  popOver.querySelector(".portfolio-title").textContent = portfoliodata.title,
   popOver.querySelector(".portfolio-img").textContent = portfoliodata.img;
   popOver.querySelector(".portfolio-bio").textContent = portfoliodata.bio;
 
