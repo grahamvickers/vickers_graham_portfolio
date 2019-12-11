@@ -1,44 +1,53 @@
-.lightbox { 
-    display: none;
-    //display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    width: 90%;
-    position: fixed;
-    top: 0;
-    z-index: 5000;
-    padding: 100px;
+p > span { display: block; padding-bottom: 12px; } 
 
-    background-color: rgba(44, 72, 89, 0.85);
-
-    .sidebar {
-        flex: 1;
-    }
-    
-    .lb-content {
-        flex: 3;
-    }
-
-    img { max-width: 250px; }
-
-    .close {    
-        right: 24px;
-        top: 10px;
-        cursor: pointer;
-        font-size: 2em;
-        position: fixed;
-        border: thin solid white;
-        padding: 2px 14px 5px;
-        border-radius: 50%;
-        background-color: rgba(255,255,255,0.25);
-    }
+#popover { 
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  width: 50%;
+  z-index: 1;
+  border-radius: 25px;
+  padding: 10px 10px;
+  background-color: #f2f2f2;
+  border: 4px solid #F27165;
 }
 
-.show-lb { display: flex !important; }
+.show-popover { display: block !important   ; }
 
-.u-social {
-    li { 
-        display: inline-block;
-        padding: 10px;
-    }
+#popover .close {
+  float:right;
+  padding:3px;
+  margin:5px 5px 0 0;
+  cursor: pointer;
+  font-size: 22px;
+  color: red;
+}
+
+#popover .close:hover {
+  font-size: 24px;
+
+}
+
+.see-more { 
+  margin-top: 20px;
+  display: block; 
+  padding: 10px 5px; 
+  border-radius: 25px; 
+  color: #3f3f3f; 
+  border: 2px solid #3f3f3f; 
+  text-align: center;
+  width: 120px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.see-more:hover{
+  cursor: pointer;
+  background-color: #3f3f3f;
+  color: #f2f2f2;
 }

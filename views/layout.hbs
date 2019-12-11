@@ -8,11 +8,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <title>Graham Vickers Web Development</title>
 </head>
 <h1 class="hidden">Graham Vickers Web Development</h1>
 <body>
-    <nav>
+    <nav id="home">
       <img src="images/logo_gvd.svg" alt="GVD Logo" id="logo">
       <div class="hamburger">
         <div class="line"></div>
@@ -20,10 +21,10 @@
         <div class="line"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolioArea">PORTFOLIO</a></li>
+        <li><a href="#contactArea">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -43,7 +44,17 @@
 
     <section id="portfolioArea">
       <h2>Recent Projects</h2>
+
       <div id="portfolio">
+        {{#each porfolio-data}}
+          <div class="project">
+            <img src="images/{{logo}}" alt="company log">
+            <span class="see-more" data-target="{{ID}}">READ MORE</span>
+          </div>
+        {{/each}}
+      </div>
+
+      {{!-- <div id="portfolio">
         <div class="project">
           <img src="images/traa_logo.svg" alt="TRAA Logo">
         </div>
@@ -55,7 +66,7 @@
         <div class="project">
           <img src="images/logo_thermosecurity.svg" alt="ThermoSecurity Logo">
         </div>
-      </div>
+      </div> --}}
     </section>
     
   <main>
@@ -119,19 +130,24 @@
 
 
   </main>
-<footer>
+  <footer>
 
-  <div id="social">
-    <a href="https://www.instagram.com/gvixpix/" ><img src="images/instagram.svg" alt="Instagram" class="socialIcon"></a>
-    <a href="https://www.linkedin.com/in/grahamvickers/"><img src="images/linkedin.svg" alt="LinkedIn" class="socialIcon"></a>
-    <a href="https://github.com/grahamvickers"><img src="images/github.svg" alt="Github" class="socialIcon"></a>
-  </div>
+    <div id="social">
+      <a href="https://www.instagram.com/gvixpix/" ><img src="images/instagram.svg" alt="Instagram" class="socialIcon"></a>
+      <a href="https://www.linkedin.com/in/grahamvickers/"><img src="images/linkedin.svg" alt="LinkedIn" class="socialIcon"></a>
+      <a href="https://github.com/grahamvickers"><img src="images/github.svg" alt="Github" class="socialIcon"></a>
+    </div>
 
-  <div>
-    <p>© 2019 Graham Vickers</p>
-  </div>
-</footer>
-    
+    <div>
+      <p>© 2019 Graham Vickers</p>
+    </div>
+  </footer>
+        <article id="popover">
+          <div class="close">x</div>
+          <h2 class="porfolio-title"></h2>
+          <img src="images/{{portfolio-bio}}" alt="" class="portfolio-img">
+          <p class="portfolio-bio"></p>
+        </article>
 
     <script src="js/main.js"></script>
 </body>
