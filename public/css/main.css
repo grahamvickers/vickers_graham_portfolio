@@ -329,8 +329,8 @@ p > span {
   z-index: 1;
   border-radius: 25px;
   padding: 10px 10px;
-  background-color: white;
-  border: 4px solid #4A82DD; }
+  background-color: #f2f2f2;
+  border: 4px solid #F27165; }
 
 .show-popover {
   display: block !important; }
@@ -347,14 +347,15 @@ p > span {
   font-size: 24px; }
 
 .see-more {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-right: 20%;
+  margin-left: 20%;
   display: block;
   padding: 10px 5px;
   border-radius: 25px;
-  color: #3f3f3f;
-  border: 2px solid #3f3f3f;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
   text-align: center;
-  width: 120px;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   -webkit-transition-duration: 0.4s;
@@ -363,9 +364,13 @@ p > span {
 
 .see-more:hover {
   cursor: pointer;
-  background-color: #3f3f3f;
-  color: #f2f2f2; }
+  background-color: #f2f2f2;
+  color: #F27165; }
 
+@media screen and (min-width: 960px) {
+  .see-more {
+    margin-right: 30%;
+    margin-left: 30%; } }
 body {
   color: #3f3f3f;
   background-color: #f2f2f2;

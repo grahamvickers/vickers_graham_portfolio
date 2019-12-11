@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
-});
+})
 
 router.get('/', (req, res) => {
 
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 })
 
 
-router.get('/', (req, res) => {
+router.get('/svgdata/', (req, res) => {
   // here is where we set up the query 
   console.log(req);
   console.log(req.params);
