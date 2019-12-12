@@ -24,13 +24,14 @@
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolioArea">PORTFOLIO</a></li>
-        <li><a href="#contactArea">CONTACT</a></li>
+        <li><a href="#contactArea" id="contact">CONTACT</a></li>
       </ul>
     </nav>
 
     <div id="landing">
       <div id="intro">
         <h2 id="name">Graham Vickers</h2>
+        <h4>Full Stack Developer</h4>
         <p>Creating lasting impressions is what I do.</p>
       </div>
       <img src="images/headshot.svg" alt="Headshot of Graham Vickers">
@@ -38,23 +39,27 @@
 
     <div id="about">
       <h2>About Me</h2>
-      <p>My name is Graham Vickers and I'm a full stack developer based out of London, Ontario.</p>
+      <h5>My name is Graham Vickers and I'm a full stack developer based out of London, Ontario.</h5>
       <p>I enjoy all parts of the Web from designing bold and engaging UI/UX, to developing the front and back ends of websites.  When I’m not designing or coding, I can usually be found cooking up a new recipe, with friends, or out for a walk. Keep scrolling to find out more.</p>
     </div>
 
     <section id="portfolioArea">
       <h2>Recent Projects</h2>
 
-      <div id="portfolio">
-        {{#each porfoliodata}}
+      {{!-- DESIRED WAY TO LOAD DATA FOR PORTFOLIO --}}
+
+      {{!-- <div id="portfolio">
+        {{#each porfolio}}
           <div class="project">
             <img src="images/{{logo}}" alt="company log">
             <span class="see-more" data-target="{{id}}">READ MORE</span>
           </div>
         {{/each}}
-      </div>
+      </div> --}}
 
-      {{!-- <div id="portfolio">
+      {{!-- BACKUP WAY TO LOAD DATA FOR PORTFOLIO --}}
+
+      <div id="portfolio">
         <div class="project">
           <img src="images/traa_logo.svg" alt="TRAA Logo">
           <span class="see-more" data-target="1">READ MORE</span>
@@ -62,14 +67,23 @@
 
         <div class="project">
           <img src="images/modern_link_logo.svg" alt="Modern Link Media Logo" id="modernLink">
-          <span class="see-more" data-target="{{ID}}">READ MORE</span>
+          <span class="see-more" data-target="2">READ MORE</span>
         </div>
 
         <div class="project">
           <img src="images/logo_thermosecurity.svg" alt="ThermoSecurity Logo">
-          <span class="see-more" data-target="{{ID}}">READ MORE</span>
+          <span class="see-more" data-target="3">READ MORE</span>
         </div>
-      </div> --}}
+      </div>
+
+      <div id="demoReel">
+        <h3>Demo Reel</h3>
+        <a href=""></a>
+        {{!-- <video src="video/demo_reel_v2.mp4" controls></video> --}}
+      </div>
+ 
+
+
  
     </section>
     
@@ -116,15 +130,15 @@
       <form action="#" method="post">
         <div class="field">
           <input type="text" id="name" name="name" placeholder="Hey, Nice to Meet You" required>
-          <label for="name">Name</label>
+          {{!-- <label for="name">Name</label> --}}
         </div>
         <div class="field">
           <input type="text" id="email" name="email" placeholder="example@example.com" required/>
-          <label for="email">E-Mail</label>
+          {{!-- <label for="email">E-Mail</label> --}}
         </div>
         <div class="field">
           <textarea id="msg" rows="4" name="msg" placeholder="Your message" required></textarea>
-          <label for="msg">MESSAGE</label>
+          {{!-- <label for="msg">MESSAGE</label> --}}
         </div>
         <input class="button" type="submit" value="Send" />
       </form>
@@ -148,10 +162,17 @@
   </footer>
         <article id="popover">
           <div class="close">x</div>
-          <h2 class="porfolio-title"></h2>
-          <img src="images/{{portfolio-img}}" alt="" class="portfolio-img">
-          <p class="portfolio-bio"></p>
+          <h2 class="project-title"></h2>
+          <img src="images/{{img}}" alt="" class="project-img">
+          <p class="project-bio"><p>
         </article>
+
+        {{!-- <article id="popover">
+          <div class="close">x</div>
+          <h2 class="project-title">{{projectdata.title}}</h2>
+          <img src="images/{{projectdata.img}}" alt="" class="project-img">
+          <p class="project-bio">{{projectdata.bio}}</p>
+        </article> --}}
 
     <script src="js/main.js"></script>
 </body>
