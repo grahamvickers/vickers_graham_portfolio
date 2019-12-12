@@ -154,7 +154,7 @@ nav {
 
 .content {
   margin: 20px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0px; }
 
 #portfolioArea {
@@ -208,15 +208,19 @@ nav {
     padding-bottom: 0; }
 
   #modernLink {
-    margin-top: 20%; } }
-@media screen and (min-width: 1200px) {
+    margin-top: 20%; }
+
+  .content {
+    text-align: center; } }
+@media screen and (min-width: 980px) {
   #skills {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
 
   .content {
-    width: 25%; }
+    width: 25%;
+    text-align: left; }
 
   #modernLink {
     margin-top: 10%; } }
@@ -257,7 +261,6 @@ form * {
   font-size: 20px;
   letter-spacing: 0.075em;
   font-weight: 300;
-  text-transform: uppercase;
   cursor: pointer;
   text-decoration: none; }
 
