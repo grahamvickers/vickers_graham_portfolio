@@ -14,7 +14,7 @@
 
 .content{
     margin: 20px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0px;
 }
 
@@ -87,10 +87,17 @@
     #modernLink{
         margin-top: 20%;
     }
+
+
+    .content{
+        text-align: center;
+    }
 }
 
 
-@media screen and (min-width: 1200px) {
+
+
+@media screen and (min-width: 980px) {
     #skills{
         display: flex;
         flex-direction: row;
@@ -100,6 +107,7 @@
     .content{
         // height: 600px;
         width: 25%;
+        text-align: left;
     }
 
     #modernLink{
