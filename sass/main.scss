@@ -19,16 +19,19 @@ main{
     text-align: center;
 }
 
-h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: $heading-color; font-weight: bold; }
+h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; color: $heading-color; font-weight: bold; }
 h1 {font-size: 54px;}
 h2{font-size: 36px; margin-bottom: 20px;}
 h3{color: $heading-color; font-size: 28px;}
+h4{color: #2f2f2f; font-size: 24px;}
+h5{color: #3f3f3f; font-size: 20px; margin-bottom: 20px;}
 p {  font-family: 'Poppins', sans-serif;}
-a {color: #f2f2f2; font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: bold; text-decoration: none; margin: 10px;}
+a {color: #f2f2f2; font-size: 20px; font-family: 'Poppins', sans-serif; text-decoration: none; margin: 10px;}
 
 .hidden{
     display: none;
 }
+
 
 @media screen and (min-width: 768px) {
     main{
@@ -36,12 +39,14 @@ a {color: #f2f2f2; font-size: 20px; font-family: 'Poppins', sans-serif; font-wei
     }
 
     h2{font-size: 42px; text-align: center;}
-
+    h4{font-size: 48px;}
 
 }
 
 @media screen and (min-width: 1200px) {
-
+    h4{font-size: 52px;
+        
+    }
 }
 
 @import 'modules/_footer';
