@@ -2,8 +2,9 @@
 
 This is my portfolio website, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
 
-This site is host on Heroku (subject to change)
 [VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
+This site is host on Heroku (subject to change)
+
 
 
 ## Getting Started
@@ -64,13 +65,13 @@ Now in the browser of your choice go to: localhost:3000
 
 * Chrome - 100%
 * Firefox - 100%
-* Safari - 80%
+* Safari - 95%
 
 ### Issues
 
-* Safari - SVG and contact form functionality 
+* Safari - Google fonts not loading
 * Contact form - Contactact form in hbs is not set up to recieve mail, may add nodemailer to complete it.
-* Data: Data is not currently being loaded from the db, there is a json error that i cant figure out.
+* Data: portfolio area is loading from the db, project 'read more' still not working.
 
 ## Authors
 
