@@ -67,7 +67,7 @@ function buildPopover(projectdata, el) {
 
 
   popOver.classList.add('show-popover');
-  el.appendChild(popOver);
+  // el.appendChild(popOver);
   // debugger;
 }
 
@@ -80,7 +80,7 @@ function fetchData(event) {
   event.preventDefault()
         // debugger;
   let targetEl = this, 
-    url = `/data/${this.dataset.target}`;
+    url = `/project/${this.dataset.target}`;
     
     fetch(url)
     .then(res => res.json())

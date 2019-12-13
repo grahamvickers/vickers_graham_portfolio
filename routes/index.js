@@ -24,13 +24,13 @@ router.get('/', (req, res) => {
 
     // render our page
     res.render('layout.hbs', {data: portfoliodata}); // whatever page and data you're rendering
-   });
+   })
   })
 })
 
 
 
-router.get('/data/:target', (req, res) => {
+router.get('/project/:target', (req, res) => {
 
   // get the connection via the connection pool, and then run the query -> just one added step
   connect.getConnection((err, connection) => {
