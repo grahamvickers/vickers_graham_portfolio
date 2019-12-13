@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 
     // render our page
     res.render('layout.hbs', {data: portfoliodata}); // whatever page and data you're rendering
-   })
+   });
   })
 })
 
@@ -51,7 +51,7 @@ router.get('/project/:target', (req, res) => {
       // render our page
       res.render('layout.hbs', {data: projectdata}); // whatever page and data you're rendering
 
-    })
+    });
   })
 })
 
