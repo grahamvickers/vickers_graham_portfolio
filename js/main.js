@@ -98,4 +98,4 @@ seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
 
 document.querySelector('#popover .close').addEventListener("click",closePopover);
 
-console.log('linked up')
+console.log('linked up');
