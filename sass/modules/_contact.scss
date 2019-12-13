@@ -92,3 +92,10 @@
 
     background: #F27165;  
   }  
+
+  @media screen and (max-width: 580px){
+
+    form *{
+      font-size: 14px;
+    }
+  }

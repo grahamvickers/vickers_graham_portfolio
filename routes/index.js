@@ -2,22 +2,14 @@ var express = require('express');
 var router = express.Router();
 const connect = require('../utils/sqlConnect');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  console.log('at the main route');
 
-  res.render('layout.hbs', { title: 'Express' });
-
-})
-
-
-router.get('/portflio', (req, res) => {
+router.get('/', (req, res) => {
 
   // get the connection via the connection pool, and then run the query -> just one added step
   connect.getConnection((err, connection) => {
     if (err) { return console.log(error.message); }
 
-    let query = "SELECT id, logo FROM tbl_projects";
+    let query = `SELECT id, logo FROM tbl_projects`;
 
     connect.query(query, (err, portfoliodata) => {
     connection.release(); // send this connection back to the pool
@@ -28,17 +20,17 @@ router.get('/portflio', (req, res) => {
 
     }
 
-    console.log('portfolio'); // this should be your database query result
+    console.log('data: ', portfoliodata); // this should be your database query result
 
     // render our page
-    res.render('layout.hbs', {data: portfolio}); // whatever page and data you're rendering
+    res.render('layout.hbs', {data: portfoliodata}); // whatever page and data you're rendering
    });
   })
 })
 
 
 
-router.get('/project/:id', (req, res) => {
+router.get('/data/:target', (req, res) => {
 
   // get the connection via the connection pool, and then run the query -> just one added step
   connect.getConnection((err, connection) => {
@@ -46,7 +38,7 @@ router.get('/project/:id', (req, res) => {
 
     let query = `SELECT id, title, img, bio FROM tbl_projects WHERE id="${req.params.target}"`;
 
-    connect.query(query, (err, projectData) => {
+    connect.query(query, (err, projectdata) => {
       connection.release(); // send this connection back to the pool
 
       if (err) {
@@ -54,10 +46,10 @@ router.get('/project/:id', (req, res) => {
         return console.log(err.message);
       }
 
-      console.log(project); // this should be your database query result
+      console.log('data: ', projectdata); // this should be your database query result
 
       // render our page
-      res.render('layout.hbs', {data: projectData}); // whatever page and data you're rendering
+      res.render('layout.hbs', {data: projectdata}); // whatever page and data you're rendering
 
     })
   })

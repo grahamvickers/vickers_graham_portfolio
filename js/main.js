@@ -67,40 +67,25 @@ function buildPopover(projectdata, el) {
 
 
   popOver.classList.add('show-popover');
-  // el.appendChild(popOver);
-  debugger;
+  el.appendChild(popOver);
+  // debugger;
 }
 
 function closePopover(){
   popOver.classList.remove('show-popover');
 }
 
-// // run the fetch API and the DB data
-// function projectData() {
-//   let targetEl = this, 
-//     url = `/project/${this.dataset.target}`;
-    
-//     fetch(url)
-//     .then(res => res.json())
-//     .then(data => {
-//         console.log(data);
-
-//         // populate the popover
-//         buildPopover(data, targetEl);
-//     })
-//     .catch((err) => console.log(err));
-// }
 
 function fetchData(event) {
   event.preventDefault()
         // debugger;
   let targetEl = this, 
-    url = `/project/${this.dataset.target}`;
+    url = `/data/${this.dataset.target}`;
     
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        console.log('data: ', projectdata);
 
         // populate the popover
         buildPopover(data, targetEl);
