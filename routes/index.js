@@ -49,7 +49,7 @@ router.get('/project/:target', (req, res) => {
       console.log('data: ', projectdata); // this should be your database query result
 
       // render our page
-      res.render('layout.hbs', {data: projectdata}); // whatever page and data you're rendering
+      res.render('layout.hbs/project/:target', {data: projectdata}); // whatever page and data you're rendering
 
     });
   })

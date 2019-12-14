@@ -158,6 +158,18 @@ nav {
       margin-top: 30px; }
     #landing img {
       height: 700px; } }
+@media screen and (min-width: 1600px) {
+  #landing {
+    padding: 80px; }
+    #landing h2 {
+      font-size: 90px; }
+    #landing h4 {
+      font-size: 62px; }
+    #landing p {
+      font-size: 34px;
+      margin-top: 30px; }
+    #landing img {
+      height: 700px; } }
 #skills {
   margin-bottom: 60px; }
 
@@ -248,7 +260,8 @@ form {
   font-family: 'Poppins', sans-serif; }
 
 #contactArea {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 80px; }
 
 #contactHead {
   margin-bottom: 20px; }
