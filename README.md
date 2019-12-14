@@ -2,10 +2,8 @@
 
 This is my portfolio website, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
 
-[VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
 This site is host on Heroku (subject to change)
-
-
+* [VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
 
 ## Getting Started
 
@@ -22,24 +20,22 @@ You must have the following programs installed:
 
 You will need to install the following in order to run the website:
 
-To see content you need to install the .sql file from the 'data' folder, this can be done in the Terminal or through phpMyAdmin.
+To see dynamic content you need to install the .sql file from the 'data' folder, this can be done in the Terminal or through phpMyAdmin. Name the database 'db_portfolio'.
 
-You also will need Node.js installed for the content to be displayed, follow the install steps below:
+You also will need [Node.js](https://nodejs.org/en/download/current/) installed for the content to be displayed, follow the install steps below:
 
-Node.js Website
-```
-https://nodejs.org/en/download/current/
-```
 
-Install through the command line:
+Install through the command line (required):
 ```
 $ npm install 
 ```
-Node.js Packages (required):
+
+Node.js Packages:
 ```
 $ npm i -s express
 $ npm i -s mysql
 ```
+
 ## Deployment
 
 Once everything is installed, now in terminal within the project type:
@@ -71,7 +67,7 @@ Now in the browser of your choice go to: localhost:3000
 
 * Safari - Google fonts not loading
 * Contact form - Contactact form in hbs is not set up to recieve mail, may add nodemailer to complete it.
-* Data: portfolio area is loading from the db, project 'read more' still not working.
+* Data - portfolio area is loading from the db, project 'read more' still not working.
 
 ## Authors
 
