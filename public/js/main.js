@@ -1,8 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
-const seeMoreButtons = document.querySelectorAll('.see-more'),
-      popOver = document.querySelector('#popover');
+const seeMoreButtons = document.querySelectorAll('.see-more');
+const  popOver = document.querySelector('#popover');
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
@@ -85,7 +85,7 @@ function fetchData() {
     
     fetch(url)
     .then(res => res.json())
-    .then(data => {
+    .then(project => {
         console.log(data);
 
         // populate the popover
