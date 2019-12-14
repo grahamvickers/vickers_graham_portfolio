@@ -49,33 +49,33 @@
 
       {{!-- DESIRED WAY TO LOAD DATA FOR PORTFOLIO --}}
 
-      <div id="portfolio">
+      {{!-- <div id="portfolio">
         {{#each data}}
           <div class="project">
             <img src="images/{{logo}}" alt="company log">
             <span class="see-more" data-target="{{id}}">READ MORE</span>
           </div>
         {{/each}}
-      </div>
+      </div> --}}
 
       {{!-- BACKUP WAY TO LOAD DATA FOR PORTFOLIO --}}
 
-      {{!-- <div id="portfolio">
+      <div id="portfolio">
         <div class="project">
           <img src="images/traa_logo.svg" alt="TRAA Logo">
-          <span class="see-more" data-target="1">READ MORE</span>
+          <span class="see-more" data-target="#">READ MORE</span>
         </div>
 
         <div class="project">
           <img src="images/modern_link_logo.svg" alt="Modern Link Media Logo" id="modernLink">
-          <span class="see-more" data-target="2">READ MORE</span>
+          <span class="see-more" data-target="#">READ MORE</span>
         </div>
 
         <div class="project">
           <img src="images/logo_thermosecurity.svg" alt="ThermoSecurity Logo">
-          <span class="see-more" data-target="3">READ MORE</span>
+          <span class="see-more" data-target="#">READ MORE</span>
         </div>
-      </div> --}}
+      </div>
 
 
       {{!-- demo reel --}}
@@ -163,8 +163,8 @@
   
         <article id="popover">
           <div class="close">x</div>
-          <h2 class="project-title"></h2>
           <img src="images/{{img}}" alt="" class="project-img">
+          <h2 class="project-title"></h2>
           <p class="project-bio"><p>
         </article>
 

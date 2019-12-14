@@ -98,15 +98,21 @@ nav {
 #about {
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 40px; }
+  margin-bottom: 80px;
+  margin-top: 60px; }
+  #about h2 {
+    text-align: left; }
 
 @media screen and (min-width: 980px) {
   #about {
     margin-right: 150px;
     margin-left: 150px;
-    text-align: center; }
+    text-align: left;
+    max-width: 1200px; }
     #about p {
-      font-size: 18px; } }
+      font-size: 18px; }
+    #about h2 {
+      text-align: left; } }
 #landing {
   background-color: #F27165;
   display: flex;
@@ -114,23 +120,34 @@ nav {
   padding: 40px;
   margin-bottom: 40px; }
   #landing h2 {
-    color: white; }
+    color: #f2f2f2;
+    text-align: left; }
   #landing img {
     justify-content: flex-end;
     height: 200px;
     margin-left: 20px; }
 
+@media screen and (min-width: 400px) {
+  #landing img {
+    height: 300px; } }
+@media screen and (min-width: 500px) {
+  #landing h2 {
+    text-align: left;
+    font-size: 46px;
+    font-weight: bold; }
+  #landing img {
+    height: 400px; }
+  #landing p {
+    font-size: 20px; } }
 @media screen and (min-width: 768px) {
   #landing {
     padding: 60px; }
     #landing h2 {
-      text-align: left;
-      font-size: 52px;
-      font-weight: bold; }
+      font-size: 52px; }
     #landing p {
-      font-size: 24px; }
+      font-size: 26px; }
     #landing img {
-      height: 400px; } }
+      height: 500px; } }
 @media screen and (min-width: 960px) {
   #landing {
     padding: 80px; }
@@ -146,7 +163,7 @@ nav {
 
 #skills img {
   height: 200px;
-  width: 80%;
+  width: 100%;
   margin: 10px; }
 
 #skills h2 {
@@ -154,7 +171,7 @@ nav {
 
 .content {
   margin: 20px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0px; }
 
 #portfolioArea {
@@ -209,8 +226,12 @@ nav {
     margin-top: 20%; }
 
   .content {
-    text-align: center; } }
-@media screen and (min-width: 980px) {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%; }
+    .content img {
+      justify-content: center; } }
+@media screen and (min-width: 768px) {
   #skills {
     display: flex;
     flex-direction: row;
@@ -218,10 +239,11 @@ nav {
 
   .content {
     width: 25%;
-    text-align: left; } }
-* {
-  box-sizing: border-box; }
-
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .content img {
+      width: 80%; } }
 form {
   font-family: 'Poppins', sans-serif; }
 
@@ -365,6 +387,9 @@ p > span {
   background-color: transparent;
   color: #F2f2f2; }
 
+.project-img {
+  width: 320px; }
+
 @media screen and (min-width: 400px) {
   .see-more {
     margin-right: 30%;
@@ -372,11 +397,17 @@ p > span {
 @media screen and (min-width: 768px) {
   .see-more {
     margin-right: 20%;
-    margin-left: 20%; } }
+    margin-left: 20%; }
+
+  .project-img {
+    width: 440px; } }
 @media screen and (min-width: 1200px) {
   .see-more {
     margin-right: 32%;
-    margin-left: 32%; } }
+    margin-left: 32%; }
+
+  .project-img {
+    width: 500px; } }
 body {
   color: #3f3f3f;
   background-color: #f2f2f2;
