@@ -86,7 +86,7 @@ function fetchData() {
     fetch(url)
     .then(res => res.json())
     .then(project => {
-        console.log(data);
+        console.log(data)
 
         // populate the popover
         buildPopover(project, targetEl);
