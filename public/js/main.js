@@ -68,31 +68,17 @@ function buildPopover(projectdata, el) {
 
   popOver.classList.add('show-popover');
   // el.appendChild(popOver);
-  debugger;
+  // debugger;
 }
 
 function closePopover(){
   popOver.classList.remove('show-popover');
 }
 
-// // run the fetch API and the DB data
-// function projectData() {
-//   let targetEl = this, 
-//     url = `/project/${this.dataset.target}`;
-    
-//     fetch(url)
-//     .then(res => res.json())
-//     .then(data => {
-//         console.log(data);
 
-//         // populate the popover
-//         buildPopover(data, targetEl);
-//     })
-//     .catch((err) => console.log(err));
-// }
 
-function fetchData(event) {
-  event.preventDefault()
+function fetchData() {
+  //event.preventDefault()
         // debugger;
   let targetEl = this, 
     url = `/project/${this.dataset.target}`;
@@ -103,7 +89,7 @@ function fetchData(event) {
         console.log(data);
 
         // populate the popover
-        buildPopover(data, targetEl);
+        buildPopover(project, targetEl);
     })
     .catch((err) => console.log(err));
 }
@@ -113,4 +99,4 @@ seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
 
 document.querySelector('#popover .close').addEventListener("click",closePopover);
 
-console.log('linked up')
+console.log('linked up');

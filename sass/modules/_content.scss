@@ -4,7 +4,7 @@
 
 #skills img{
     height: 200px;
-    width: 80%;
+    width: 100%;
     margin: 10px;
 }
 
@@ -14,7 +14,7 @@
 
 .content{
     margin: 20px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0px;
 }
 
@@ -88,14 +88,17 @@
 
 
     .content{
-        text-align: center;
+        text-align: left;
+        margin: 0 auto;
+        img{justify-content: center;}
+        width: 80%;
     }
 }
 
 
 
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 768px) {
     #skills{
         display: flex;
         flex-direction: row;
@@ -106,5 +109,8 @@
         // height: 600px;
         width: 25%;
         text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        img{width: 80%}
     }
 }
