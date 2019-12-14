@@ -313,7 +313,7 @@ form #msg {
   height: 64px;
   resize: none;
   transition: all 333ms ease-in-out;
-  padding-top: 18px; }
+  padding-top: 20px; }
 
 form textarea:focus#msg,
 form textarea:not(:placeholder-shown)#msg {
@@ -508,6 +508,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px; } }
+    padding: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
