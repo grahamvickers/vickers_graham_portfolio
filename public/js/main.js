@@ -78,20 +78,22 @@ function closePopover(){
 
 
 function fetchData() {
-  //event.preventDefault()
+  event.preventDefault()
         // debugger;
   let targetEl = this, 
     url = `/project/${this.dataset.target}`;
     
     fetch(url)
     .then(res => res.json())
-    .then(project => {
+    .then(data => {
         console.log(data)
 
         // populate the popover
-        buildPopover(project, targetEl);
+        buildPopover(data, targetEl);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err)
+    });
 }
 
 
