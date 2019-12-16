@@ -11,9 +11,9 @@
 const config = {
     host: "us-cdbr-iron-east-05.cleardb.net/",
     
-    uname: "be650f342e3d77",
-    pword: "617a788c",
-    database: "heroku_06f150c9a3d6f8b"
+    uname: "bd050fc9f31c75",
+    pword: "8d793809",
+    database: "heroku_aae2a460db30952"
 }
 
 module.exports = config;
