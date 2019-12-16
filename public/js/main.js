@@ -60,41 +60,40 @@ const waypoint5 = new Waypoint({
 })
 
 
-// function buildPopover(projectdata, el) {
-//   popOver.querySelector(".project-title").textContent = projectdata.title;
-//   popOver.querySelector(".project-img").textContent = projectdata.img;
-//   popOver.querySelector(".project-bio").textContent = projectdata.bio;
+function buildPopover(projectdata) {
+  popOver.querySelector(".project-title").textContent = projectdata.title;
+  popOver.querySelector(".project-img").textContent = projectdata.img;
+  popOver.querySelector(".project-bio").textContent = projectdata.bio;
 
 
-//   popOver.classList.add('show-popover');
-//   // el.appendChild(popOver);
-//   // debugger;
-// }
+  popOver.classList.add('show-popover')
+  // el.appendChild(popOver);
+  // debugger;
+}
 
-// function closePopover(){
-//   popOver.classList.remove('show-popover');
-// }
+function closePopover(){
+  popOver.classList.remove('show-popover');
+}
 
 
-
-// function fetchData() {
-//   event.preventDefault()
-//         // debugger;
-//   let targetEl = this, 
-//     url = `/project/${this.dataset.target}`;
+function fetchData() {
+  event.preventDefault()
+        // debugger;
+  let targetEl = this, 
+    url = `/project/${this.dataset.target}`;
     
-//     fetch(url)
-//     .then(res => res.json())
-//     .then(data => {
-//         console.log(data)
+    fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
 
-//         // populate the popover
-//         buildPopover(data, targetEl);
-//     })
-//     .catch((err) => {
-//       console.log(err)
-//     });
-// }
+        // populate the popover
+        buildPopover(data, targetEl);
+    })
+    .catch((err) => {
+      console.log(err)
+    });
+}
 
 
 seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
