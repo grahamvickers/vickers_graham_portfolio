@@ -13,14 +13,25 @@
 
     img{
         justify-content: flex-end;
-        height: 200px;
+        margin-top: 75px;
+        height: 100px;
         margin-left: 20px;
     }
+}
+@media screen and (min-width: 350px) {
+    #landing{
+        img{
+            height: 125px; 
+            margin-top: 50px;
+        }
+}
 }
 
 @media screen and (min-width: 400px) {
     #landing{
-        img{height: 300px; }
+        img{height: 300px; 
+            margin-top: 20px;
+        }
 }
 }
 
