@@ -40,12 +40,13 @@ router.get('/', (req, res) => {
 
 router.get('/project/:target', (req, res) => {
 
+  // console.log('gogog');
   // get the connection via the connection pool, and then run the query -> just one added step
   connect.getConnection((err, connection) => {
   if (err) { return console.log(error.message); }
 
     let query = `SELECT id, title, img, bio FROM tbl_projects WHERE id="${req.params.target}"`;
-
+// console.log(query);
     connect.query(query, (err, projectdata) => {
       connection.release(); // send this connection back to the pool
 
@@ -57,7 +58,7 @@ router.get('/project/:target', (req, res) => {
       console.log('data: ', projectdata); // this should be your database query result
 
       // render our page
-      res.render('layout.hbs/project/:target', {data: projectdata}); // whatever page and data you're rendering
+      res.render('layout.hbs', {data: projectdata}); // whatever page and data you're rendering
 
     });
   })
