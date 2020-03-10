@@ -30,12 +30,12 @@
 .project{
     background-color: #3f3f3f;
     padding: 40px;
-    height: 30%;
+    height: 300px;
 }
 
-.project:nth-child(2){
+.project:nth-child(even){
     background-color: #F27165;
-    height: inherit;
+    //height: inherit;
     // padding-top: 30%;
     // padding-bottom: 30%;
 }
@@ -44,6 +44,7 @@
     height: 200px;
     width: 80%;
 }
+
 
 #demoReel{
     h3{
@@ -69,20 +70,40 @@
 @media screen and (min-width: 768px) {
     #portfolio{ 
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
+        position: relative;
         text-align: center;
         width: 100%;
     }
 
     .project{
-        width: 33%;
+        width: auto;
+        height: auto;
+        //padding: 20px;
+        margin: 4px;
+        flex: 1;
+        flex-basis: 20%;
         height: inherit;
+    }
+    
+    .project:nth-child(even){
+        background-color: #F27165;
+        //height: inherit;
+        // padding-top: 30%;
+        // padding-bottom: 30%;
+    }
+    
+    .project img{
+        max-height: 180px;
+        width: 80%;
+ 
+    }
+    
+    #projectImg{
+        height: 200px;
     }
 
-    .project:nth-child(2){
-        background-color: #F27165;
-        height: inherit;
-    }
+    
 
     // #modernLink{
     //     margin-top: 20%;

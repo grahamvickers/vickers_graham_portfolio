@@ -201,11 +201,10 @@ nav {
 .project {
   background-color: #3f3f3f;
   padding: 40px;
-  height: 30%; }
+  height: 300px; }
 
-.project:nth-child(2) {
-  background-color: #F27165;
-  height: inherit; }
+.project:nth-child(even) {
+  background-color: #F27165; }
 
 .project img {
   height: 200px;
@@ -228,17 +227,28 @@ nav {
 @media screen and (min-width: 768px) {
   #portfolio {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    position: relative;
     text-align: center;
     width: 100%; }
 
   .project {
-    width: 33%;
+    width: auto;
+    height: auto;
+    margin: 4px;
+    flex: 1;
+    flex-basis: 20%;
     height: inherit; }
 
-  .project:nth-child(2) {
-    background-color: #F27165;
-    height: inherit; }
+  .project:nth-child(even) {
+    background-color: #F27165; }
+
+  .project img {
+    max-height: 180px;
+    width: 80%; }
+
+  #projectImg {
+    height: 200px; }
 
   .content {
     text-align: left;
@@ -344,10 +354,11 @@ form input[type="submit"]:focus {
 #errorContent {
   text-align: center; }
   #errorContent #errorImg {
-    width: 80%; }
+    width: 50%;
+    margin-bottom: 80px; }
   #errorContent h1 {
     font-size: 32px;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
 
 p > span {
   display: block;
@@ -424,6 +435,10 @@ p > span {
 
   .project-img {
     width: 500px; } }
+html, body {
+  height: 100%;
+  margin: 0; }
+
 body {
   color: #3f3f3f;
   background-color: #f2f2f2;

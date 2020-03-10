@@ -6,7 +6,11 @@
 @import 'modules/_contact';
 @import 'modules/_error';
 @import 'modules/_lightbox';
-
+ 
+html, body{
+    height: 100%;
+    margin: 0;
+}
 body {
     color: $main-color;
     background-color: $body-bg;

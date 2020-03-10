@@ -5,11 +5,20 @@ const seeMoreButtons = document.querySelectorAll('.see-more');
 const  popOver = document.querySelector('#popover');
 
 hamburger.addEventListener("click", () => {
+
   navLinks.classList.toggle("open");
+
   links.forEach(link => {
     link.classList.toggle("fade");
   })
+  links.classList.add('hide-nav')
+
 })
+
+function closeNav(){
+  link.classList.remove('hide-nav');
+}
+
 
 const waypoint = new Waypoint({
   // what element the wayo=point is looking for 
@@ -60,10 +69,13 @@ const waypoint5 = new Waypoint({
 })
 
 
-function buildPopover(projectdata) {
+function buildPopover(projectdata, el) {
   popOver.querySelector(".project-title").textContent = projectdata.title;
   popOver.querySelector(".project-img").textContent = projectdata.img;
+  popOver.querySelector(".project-vid").textContent = projectdata.vid;
   popOver.querySelector(".project-bio").textContent = projectdata.bio;
+  popOver.querySelector(".project-tools").textContent = projectdata.tools;
+
 
 
   popOver.classList.add('show-popover')
@@ -78,7 +90,7 @@ function closePopover(){
 
 function fetchData() {
   event.preventDefault()
-        // debugger;
+
   let targetEl = this, 
     url = `/project/${this.dataset.target}`;
     
@@ -99,5 +111,7 @@ function fetchData() {
 seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
 
 document.querySelector('#popover .close').addEventListener("click",closePopover);
+
+document.querySelector('#navLink').addEventListener("click",closeNav);
 
 console.log('linked up');
