@@ -45,7 +45,7 @@ router.get('/project/:target', (req, res) => {
   connect.getConnection((err, connection) => {
   if (err) { return console.log(error.message); }
 
-    let query = `SELECT id, logo, title, img, vid, bio, tools FROM tbl_projects WHERE id="${req.params.target}"`;
+    let query = `SELECT * FROM tbl_projects WHERE id="${req.params.target}"`;
     // console.log(query);
     connect.query(query, (err, projectdata) => {
       connection.release(); // send this connection back to the pool

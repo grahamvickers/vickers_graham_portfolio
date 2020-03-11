@@ -69,18 +69,16 @@ const waypoint5 = new Waypoint({
 })
 
 
-function buildPopover(projectdata, el) {
+function buildPopover(projectdata) {
   popOver.querySelector(".project-title").textContent = projectdata.title;
-  popOver.querySelector(".project-img").textContent = projectdata.img;
-  popOver.querySelector(".project-vid").textContent = projectdata.vid;
+  popOver.querySelector(".project-img").src = projectdata.img;
+  popOver.querySelector(".project-vid").src = projectdata.vid;
   popOver.querySelector(".project-bio").textContent = projectdata.bio;
   popOver.querySelector(".project-tools").textContent = projectdata.tools;
 
 
 
   popOver.classList.add('show-popover')
-  // el.appendChild(popOver);
-  // debugger;
 }
 
 function closePopover(){
@@ -97,10 +95,10 @@ function fetchData() {
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        console.log(data[0]);
 
         // populate the popover
-        buildPopover(data, targetEl);
+        buildPopover(data[0]);
     })
     .catch((err) => {
       console.log(err)
