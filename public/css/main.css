@@ -9,7 +9,7 @@ nav {
 #logo {
   height: 60px;
   float: left;
-  margin: 20px 0 0 20px; }
+  margin: 20px 0 0 80px; }
 
 * {
   margin: 0;
@@ -233,8 +233,6 @@ nav {
     width: 100%; }
 
   .project {
-    width: auto;
-    height: auto;
     margin: 4px;
     flex: 1;
     flex-basis: 20%;
@@ -244,18 +242,11 @@ nav {
     background-color: #F27165; }
 
   .project img {
-    max-height: 180px;
-    width: 80%; }
+    width: 80%;
+    height: 180px; }
 
   #projectImg {
-    height: 200px; }
-
-  .content {
-    text-align: left;
-    margin: 0 auto;
-    width: 80%; }
-    .content img {
-      justify-content: center; } }
+    height: 200px; } }
 @media screen and (min-width: 768px) {
   #skills {
     display: flex;
@@ -264,10 +255,13 @@ nav {
 
   .content {
     width: 25%;
+    margin: 0 auto;
+    width: 80%;
     text-align: left;
     margin-left: 20px;
     margin-right: 20px; }
     .content img {
+      justify-content: center;
       width: 80%; } }
 form {
   font-family: 'Poppins', sans-serif; }
@@ -375,9 +369,26 @@ p > span {
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  padding: 10px 10px;
+  padding: 20px;
   background-color: #f2f2f2;
   border: 4px solid #F27165; }
+
+#popoverCon {
+  padding: 20px;
+  text-align: left; }
+  #popoverCon .project-title {
+    font-size: 26px; }
+  #popoverCon .project-bio {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  #popoverCon .project-tools {
+    color: #3f3d56;
+    margin-bottom: 20px; }
+  #popoverCon img {
+    width: 300px;
+    justify-content: center;
+    -webkit-filter: drop-shadow(12px 12px 12px #3f3f3f);
+    filter: drop-shadow(12px 12px 12px #3f3f3f); }
 
 .show-popover {
   display: block !important; }
@@ -385,13 +396,15 @@ p > span {
 #popover .close {
   float: right;
   padding: 3px;
-  margin: 5px 5px 0 0;
+  margin: 0px 5px 0 0;
   cursor: pointer;
-  font-size: 22px;
-  color: red; }
+  font-size: 26px;
+  color: #F27165; }
 
 #popover .close:hover {
-  font-size: 24px; }
+  cursor: pointer;
+  color: #3f3f3f;
+  transition: ease .3s; }
 
 .see-more {
   margin-top: 30px;
@@ -428,7 +441,19 @@ p > span {
     margin-left: 20%; }
 
   .project-img {
-    width: 440px; } }
+    width: 440px; }
+
+  #popoverCon .project-title {
+    font-size: 52px;
+    text-align: left; }
+  #popoverCon .project-bio {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  #popoverCon .project-tools {
+    font-size: 20px; }
+  #popoverCon video {
+    max-width: 800px;
+    margin: 0 auto; } }
 @media screen and (min-width: 1200px) {
   .see-more {
     margin-right: 32%;
