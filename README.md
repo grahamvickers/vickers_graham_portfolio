@@ -1,4 +1,4 @@
-![](public/images/GVD_logo.svg){:height="50%" width="50%"}
+![](public/images/GVD_logo.svg)
 
 # Graham Vickers Web Development Portfolio
 
