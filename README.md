@@ -1,3 +1,5 @@
+![](public/images/GVD_logo.svg)
+
 # Graham Vickers Web Development Portfolio
 
 This is my portfolio website, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
