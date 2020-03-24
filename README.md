@@ -1,4 +1,4 @@
-![](public/images/GVD_logo.svg)
+![](public/images/GVD_logo.svg | width=50)
 
 # Graham Vickers Web Development Portfolio
 
