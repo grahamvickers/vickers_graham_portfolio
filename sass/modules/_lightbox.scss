@@ -11,9 +11,31 @@ p > span { display: block; padding-bottom: 12px; }
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  padding: 10px 10px;
+  padding: 20px;
   background-color: #f2f2f2;
   border: 4px solid #F27165;
+}
+
+#popoverCon{
+  padding: 20px;
+  text-align: left;
+  .project-title{
+    font-size: 26px;
+  }
+  .project-bio{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .project-tools{
+    color: #3f3d56;
+    margin-bottom: 20px;
+  }
+  img{
+    width: 300px;
+    justify-content: center;
+    -webkit-filter: drop-shadow(12px 12px 12px #3f3f3f);
+    filter: drop-shadow(12px 12px 12px #3f3f3f);
+  }
 }
 
 .show-popover { display: block !important   ; }
@@ -21,15 +43,17 @@ p > span { display: block; padding-bottom: 12px; }
 #popover .close {
   float:right;
   padding:3px;
-  margin:5px 5px 0 0;
+  margin:0px 5px 0 0;
   cursor: pointer;
-  font-size: 22px;
-  color: red;
+  font-size: 26px;
+  color: #F27165;
 }
 
 #popover .close:hover {
-  font-size: 24px;
-
+  //font-size: 18px;
+  cursor: pointer;
+  color: #3f3f3f;
+  transition: ease .3s;
 }
 
 .see-more { 
@@ -75,6 +99,25 @@ p > span { display: block; padding-bottom: 12px; }
     }
     .project-img{
       width: 440px;
+    }
+
+    #popoverCon{
+      .project-title{
+        font-size: 52px;
+        text-align: left;
+      }
+      .project-bio{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .project-tools{
+        font-size: 20px;
+      }
+      video{
+        max-width: 800px;
+        
+        margin: 0 auto;
+      }
     }
 }
 

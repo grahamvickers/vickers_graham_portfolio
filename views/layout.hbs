@@ -93,7 +93,7 @@
 
   <section id="aboutArea">
     <div>
-      <h2>MY BACKGROUND</h2>
+      <h2>WHO IS THIS GUY?</h2>
       <div id="skills">
         <div class="content">
           <img src="images/education.svg" alt="SVG Image">
@@ -149,12 +149,14 @@
   </section>
     
     <article id="popover">
-      <div class="close"><p>CLOSE</p></div>
-      <img src="/images/{{img}}" alt="" class="project-img">
-      <video src="/video/{{vid}}" class="project-vid" width="50%" controls autoplay></video>
-      <h2 class="project-title"></h2>
-      <p class="project-bio"><p>
-      <p class="project-tools"><p>
+      <div id="popoverCon">
+        <div class="close"><p>x</p></div>
+        <h2 class="project-title"></h2>
+        <p class="project-bio"><p>
+        <p class="project-tools"><p>
+        <img src="{{img}}" alt="" class="project-img">
+        <video src="{{vid}}" class="project-vid" width="80%" controls></video>
+      </div>
     </article>
 
     {{!-- <article id="popover">

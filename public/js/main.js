@@ -70,20 +70,32 @@ const waypoint5 = new Waypoint({
 
 
 function buildPopover(projectdata) {
+  //debugger;
+
   popOver.querySelector(".project-title").textContent = projectdata.title;
-  popOver.querySelector(".project-img").src = projectdata.img;
-  popOver.querySelector(".project-vid").src = projectdata.vid;
+  popOver.querySelector(".project-img").src = `images/${projectdata.img}`;
+  //popOver.querySelector(".project-vid").src = projectdata.vid;
   popOver.querySelector(".project-bio").textContent = projectdata.bio;
   popOver.querySelector(".project-tools").textContent = projectdata.tools;
 
-
+  let popOverVid = popOver.querySelector("video");
+  if (projectdata.vid) {
+    popOverVid.src = `video/${projectdata.vid}`;
+    popOverVid.style.visibility = "visible";
+  } else {
+    popOverVid.style.visibility = "hidden";
+  }
 
   popOver.classList.add('show-popover')
 }
 
+
+
 function closePopover(){
   popOver.classList.remove('show-popover');
 }
+
+
 
 
 function fetchData() {
