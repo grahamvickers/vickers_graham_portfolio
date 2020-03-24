@@ -63,13 +63,12 @@ Now in the browser of your choice go to: localhost:3000
 
 * Chrome - 100%
 * Firefox - 100%
-* Safari - 95%
+* Safari - 100%
+* IE - Unknown
 
 ### Issues
 
-* Safari - Google fonts not loading
-* Contact form - Contactact form in hbs is not set up to recieve mail, may add nodemailer to complete it.
-* Data - portfolio area is loading from the db, project 'read more' still not working.
+* Contact form - Contactact form is not set up to recieve mail, may add nodemailer to complete it.
 
 ## Authors
 
