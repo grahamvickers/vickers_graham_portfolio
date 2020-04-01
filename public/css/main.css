@@ -376,6 +376,12 @@ p > span {
 #popoverCon {
   padding: 20px;
   text-align: left; }
+  #popoverCon h4 {
+    color: #3f3f3f; }
+  #popoverCon #line {
+    background-color: #3f3f3f;
+    height: 1px;
+    width: 100%; }
   #popoverCon .project-title {
     font-size: 26px; }
   #popoverCon .project-bio {
@@ -408,11 +414,9 @@ p > span {
 
 .see-more {
   margin-top: 30px;
-  margin-right: 20%;
-  margin-left: 20%;
   display: block;
-  padding: 10px 5px;
-  border-radius: 25px;
+  padding: 16px 28px;
+  border-radius: 30px;
   color: #F27165;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
@@ -433,16 +437,20 @@ p > span {
 
 @media screen and (min-width: 400px) {
   .see-more {
-    margin-right: 30%;
-    margin-left: 30%; } }
+    margin-right: 25%;
+    margin-left: 25%; } }
 @media screen and (min-width: 768px) {
   .see-more {
-    margin-right: 20%;
-    margin-left: 20%; }
+    margin-right: 5%;
+    margin-left: 5%; }
 
   .project-img {
     width: 440px; }
 
+  #popoverCon h4 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   #popoverCon .project-title {
     font-size: 52px;
     text-align: left; }
@@ -456,8 +464,8 @@ p > span {
     margin: 0 auto; } }
 @media screen and (min-width: 1200px) {
   .see-more {
-    margin-right: 32%;
-    margin-left: 32%; }
+    margin-right: 20%;
+    margin-left: 20%; }
 
   .project-img {
     width: 500px; } }
