@@ -15,9 +15,12 @@ nav {
   float: left;
   margin: 20px 0 0 80px;
 }
-#home{
-  align-items: center;
-}
+// #home{
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
 * {
     margin: 0;
@@ -84,7 +87,7 @@ nav {
     .nav-links {
       position: fixed;
       background: #3f3f3f;
-      height: 40vh;
+      height: 100vh;
       width: 100%;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
@@ -120,5 +123,5 @@ nav {
 
   
   @media screen and (min-width: 768px) {
-    
+ 
   }
