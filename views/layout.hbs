@@ -109,13 +109,13 @@
         </div>
 
         <div class="content">
-          <img src="images/ideas.svg" alt="SVG Image">
+          <img src="images/designer.svg" alt="SVG Image">
           <h3>1/3 CUP DESIGNER</h3>
           <p>I am proficient in Adobe Suite, I enjoy and specialize in creating bold and engaging UI & UX. I also am a passionate photographer and videographer. Another one of my design specialties is ‘making it pop’.</p>    
         </div>
 
         <div class="content">
-          <img src="images/analysis.svg" alt="SVG Image">
+          <img src="images/developer.svg" alt="SVG Image">
           <h3>2/3 CUP DEVELOPER</h3>
           <p>I specialize in front-end development, I love creating with HTML, CSS and ‘making it pop’ in JavaScript. Some of my back-end specialties are Node.js, PHP, COFFEE and MySQL.</p>
         </div>
@@ -130,7 +130,8 @@
     </div>
     
     <div class="wrapper">
-      <form action="#" method="post">
+      <form action="send" method="post">
+        {{msg}}
         <div class="field">
           <input type="text" id="name" name="name" placeholder="HEY, WHAT'S YOUR NAME?" required>
           {{!-- <label for="name">Name</label> --}}
@@ -144,6 +145,7 @@
           {{!-- <label for="msg">MESSAGE</label> --}}
         </div>
         <input class="button" type="submit" value="SEND" />
+        {{!-- <button type="submit">SEND</button> --}}
       </form>
     </div>
   </section>
