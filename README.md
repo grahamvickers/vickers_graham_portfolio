@@ -4,8 +4,8 @@
 
 This is my portfolio website, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
 
-This site is host on Heroku (subject to change)
-* [VIEW LIVE SITE](https://graham-vickers-web-development.herokuapp.com/)
+This site is hosted on Heroku (subject to change)
+* [VIEW LIVE SITE](https://grahamvickers.herokuapp.com/)
 
 ## Getting Started
 
