@@ -54,7 +54,7 @@ nav {
     #logo{
       height: 50px;
       float: left;
-      margin: 20px 0 0 20px;
+      margin: 0 0 0 0px;
     }
 
     .line {
@@ -98,7 +98,7 @@ nav {
       opacity: 0;
     }
     .nav-links li a {
-      font-size: 25px;
+      font-size: 26px;
     }
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;

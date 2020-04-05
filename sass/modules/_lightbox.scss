@@ -29,6 +29,7 @@ p > span { display: block; padding-bottom: 12px; }
   }
   .project-title{
     font-size: 26px;
+    border-bottom: 2px solid #F27165;
   }
   .project-bio{
     font-size: 14px;
@@ -131,6 +132,9 @@ p > span { display: block; padding-bottom: 12px; }
         
         margin: 0 auto;
       }
+      img{
+        width: 500px;
+      }
     }
 }
 
@@ -140,7 +144,9 @@ p > span { display: block; padding-bottom: 12px; }
         margin-right: 20%;
         margin-left: 20%; 
     }
-    .project-img{
-      width: 500px;
+    #popoverCon{
+      img{
+        width: 600px;
+      }
     }
 }

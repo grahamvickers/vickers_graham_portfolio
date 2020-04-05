@@ -2,6 +2,8 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -50,8 +52,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// app.post('/send', (req, res) => {
-//   console.log(req.body);
-// });
+app.post('/send', (req, res) => {
+  console.log(req.body);
+});
 
 module.exports = app;

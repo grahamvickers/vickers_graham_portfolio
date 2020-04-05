@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <title>Graham Vickers Web Development</title>
@@ -29,7 +30,7 @@
       </ul>
     </nav>
 
-    <div id="landing">
+    <div id="landing" animated bounceInLeft>
       <div id="intro">
         <h2>Graham Vickers</h2>
         <h4>Full Stack Developer</h4>
@@ -98,8 +99,9 @@
         <div class="content">
           <img src="images/education.svg" alt="SVG Image">
           <h3>EDUCATION</h3>
-          <p>Fanshawe College 2018-2020, Interactive Media Design - 2 year diploma</p>
-          <p>Fanshawe College 2020-2021, Interactive Media Specialist - 1 year graduate diploma</p>
+          <p>∙  Fanshawe College 2018-2020, Interactive Media Design - 2 year diploma</p>
+          <br>
+          <p>∙  Fanshawe College 2020-2021, Interactive Media Specialist - 1 year graduate diploma</p>
         </div>
 
         <div class="content">
@@ -111,13 +113,13 @@
         <div class="content">
           <img src="images/designer.svg" alt="SVG Image">
           <h3>1/3 CUP DESIGNER</h3>
-          <p>I am proficient in Adobe Suite, I enjoy and specialize in creating bold and engaging UI & UX. I also am a passionate photographer and videographer. Another one of my design specialties is ‘making it pop’.</p>    
+          <p>I am proficient in Adobe Suite, I enjoy and specialize in creating bold and engaging UI & UX. Another one of my design specialties is ‘making it pop’. I am also a passionate photographer and videographer.</p>    
         </div>
 
         <div class="content">
           <img src="images/developer.svg" alt="SVG Image">
           <h3>2/3 CUP DEVELOPER</h3>
-          <p>I specialize in front-end development, I love creating with HTML, CSS and ‘making it pop’ in JavaScript. Some of my back-end specialties are Node.js, PHP, COFFEE and MySQL.</p>
+          <p>I specialize in front-end web development. I love creating websites with HTML, Vue.Js, CSS and ‘making it pop’ in JavaScript. Some of my back-end specialties are Node.js, PHP, COFFEE and MySQL.</p>
         </div>
       </div>
     </div>
@@ -130,7 +132,7 @@
     </div>
     
     <div class="wrapper">
-      <form action="send" method="post">
+      <form action="send" method="POST">
         {{msg}}
         <div class="field">
           <input type="text" id="name" name="name" placeholder="HEY, WHAT'S YOUR NAME?" required>
@@ -145,7 +147,7 @@
           {{!-- <label for="msg">MESSAGE</label> --}}
         </div>
         <input class="button" type="submit" value="SEND" />
-        {{!-- <button type="submit">SEND</button> --}}
+
       </form>
     </div>
   </section>
@@ -154,7 +156,6 @@
       <div id="popoverCon">
         <div class="close"><p>x</p></div>
         <h2 class="project-title"></h2>
-        <div id="line"></div>
         <h4>The process</h4>
         <p class="project-bio"><p>
         <h3>The Tools</h3> 
@@ -163,15 +164,6 @@
         <video src="{{vid}}" class="project-vid" width="80%" controls></video>
       </div>
     </article>
-
-    {{!-- <article id="popover">
-      <div class="close"><p>CLOSE</p></div>
-      <img src="images/{{img}}" alt="" class="project-img">
-      <video src="video/{{vid}}" class="project-vid" width="50%" controls autoplay></video>
-      <h2 class="project-title">{{title}}</h2>
-      <p class="project-bio">{{bio}}<p>
-      <p class="project-tools">{{tools}}<p>
-    </article> --}}
 
   </main>
   <footer>
@@ -183,7 +175,7 @@
     </div>
 
     <div>
-      <p>© Copyright 2020 Graham Vickers. All Rights Reserved.</p>
+      <p>© 2020 Copyright Graham Vickers. All Rights Reserved.</p>
     </div>
   </footer>
   
