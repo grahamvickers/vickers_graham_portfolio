@@ -50,4 +50,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// app.post('/send', (req, res) => {
+//   console.log(req.body);
+// });
+
 module.exports = app;
