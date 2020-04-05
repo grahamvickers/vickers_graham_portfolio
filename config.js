@@ -9,11 +9,11 @@ const config = {
 //Heroku Config Settings
 
 // const config = {
-//     host: "us-cdbr-iron-east-05.cleardb.net/",
+//     host: "us-cdbr-iron-east-01.cleardb.net",
     
-//     uname: "bd050fc9f31c75",
-//     pword: "8d793809",
-//     database: "heroku_aae2a460db30952"
+//     uname: "b10f81ae479bbb",
+//     pword: "18e987fa",
+//     database: "heroku_a34ddbebf04f8a9"
 // }
 
 module.exports = config;
