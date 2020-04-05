@@ -15,6 +15,9 @@ nav {
   float: left;
   margin: 20px 0 0 80px;
 }
+#home{
+  align-items: center;
+}
 
 * {
     margin: 0;
@@ -54,7 +57,7 @@ nav {
     #logo{
       height: 50px;
       float: left;
-      margin: 0 0 0 0px;
+      margin: 20px 0 0 20px;
     }
 
     .line {
@@ -81,7 +84,7 @@ nav {
     .nav-links {
       position: fixed;
       background: #3f3f3f;
-      height: 100vh;
+      height: 40vh;
       width: 100%;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
