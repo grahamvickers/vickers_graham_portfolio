@@ -37,9 +37,9 @@ app.use((err, req, res, next) => {
   res.render('error', {data: err, layout: 'errorPage'})
 })
 
-/*app.listen(port, () => {
-  console.log(`app is running on ${port}`);
-})*/
+// app.listen(port, () => {
+//   console.log(`app is running on ${port}`);
+// })
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -50,10 +50,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
-
-app.post('/send', (req, res) => {
-  console.log(req.body);
 });
 
 module.exports = app;
