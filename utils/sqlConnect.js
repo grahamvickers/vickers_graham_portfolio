@@ -3,7 +3,7 @@ var config = require('../config');
 
 var connect = mysql.createPool({
   host: config.host,
-  port: config.port,
+  // port: config.port,
   user: config.uname,
   password: config.pword,
   database: config.database,
