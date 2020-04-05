@@ -41,7 +41,7 @@ nav {
   #logo {
     height: 50px;
     float: left;
-    margin: 20px 0 0 20px; }
+    margin: 0 0 0 0px; }
 
   .line {
     width: 30px;
@@ -82,7 +82,7 @@ nav {
     opacity: 0; }
 
   .nav-links li a {
-    font-size: 25px; }
+    font-size: 26px; }
 
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s; }
@@ -107,10 +107,7 @@ nav {
   #about {
     margin-right: 150px;
     margin-left: 150px;
-    text-align: left;
-    max-width: 1200px; }
-    #about p {
-      font-size: 18px; }
+    text-align: left; }
     #about h2 {
       text-align: left; } }
 #landing {
@@ -166,7 +163,7 @@ nav {
       height: 700px; } }
 @media screen and (min-width: 1600px) {
   #landing {
-    padding: 80px; }
+    padding: 100px; }
     #landing h2 {
       font-size: 90px; }
     #landing h4 {
@@ -383,7 +380,8 @@ p > span {
     height: 1px;
     width: 100%; }
   #popoverCon .project-title {
-    font-size: 26px; }
+    font-size: 26px;
+    border-bottom: 2px solid #F27165; }
   #popoverCon .project-bio {
     font-size: 14px;
     margin-bottom: 20px; }
@@ -461,14 +459,16 @@ p > span {
     font-size: 20px; }
   #popoverCon video {
     max-width: 800px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  #popoverCon img {
+    width: 500px; } }
 @media screen and (min-width: 1200px) {
   .see-more {
     margin-right: 20%;
     margin-left: 20%; }
 
-  .project-img {
-    width: 500px; } }
+  #popoverCon img {
+    width: 600px; } }
 html, body {
   height: 100%;
   margin: 0; }
@@ -533,7 +533,13 @@ a {
     font-size: 48px; } }
 @media screen and (min-width: 1200px) {
   h4 {
-    font-size: 52px; } }
+    font-size: 52px; }
+
+  p {
+    font-size: 18px; }
+
+  a {
+    font-size: 18px; } }
 footer {
   color: #f2f2f2;
   text-align: center;
