@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
   // get the connection via the connection pool, and then run the query -> just one added step
   connect.getConnection((err, connection) => {
-    if (err) { return console.log(error.message); }
+    if (err) { return console.log(err.message); }
 
     let query = `SELECT id, logo FROM tbl_projects`;
 
